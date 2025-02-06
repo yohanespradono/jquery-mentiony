@@ -220,7 +220,7 @@ var tmpEle = null;
             elmInputBoxContent.css({minHeight: elmInputBoxInitialHeight + 'px'});
 
             elmInputBoxContentAbsPosition = elmInputBoxContent.offset();
-            editableContentLineHeightPx = parseInt($(elmInputBoxContent.css('line-height')).selector);
+            editableContentLineHeightPx = parseInt(elmInputBoxContent.css('line-height'));
 
             // This event occured from top to down.
             // When press a key: onInputBoxKeyDown --> onInputBoxKeyPress --> onInputBoxInput --> onInputBoxKeyUp
